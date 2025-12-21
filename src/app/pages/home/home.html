@@ -1,0 +1,101 @@
+<div class="home-layout">
+
+  <!-- Columna izquierda: formulario -->
+  <mat-card class="card-form">
+    <mat-card-title>Cargar carta</mat-card-title>
+
+    <form [formGroup]="cardForm" (ngSubmit)="saveCard()">
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Facción</mat-label>
+        <mat-select formControlName="faction">
+          <mat-option *ngFor="let f of factions" [value]="f">{{ f }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <h4>(unlimited son sellos y tokens)</h4>
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Rareza</mat-label>
+        <mat-select formControlName="rarity">
+          <mat-option *ngFor="let r of rarities" [value]="r">{{ r }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Imagen (URL)</mat-label>
+        <input matInput formControlName="img">
+      </mat-form-field>
+
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Costo facción</mat-label>
+          <input matInput type="number" formControlName="factionCost">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Costo</mat-label>
+          <input matInput type="number" formControlName="cost">
+        </mat-form-field>
+      </div>
+
+      <h3>Flags</h3>
+      <div class="flags">
+  <mat-checkbox formControlName="banned" (change)="onFlagChange('banned', $event.checked)">Baneada</mat-checkbox>
+  <mat-checkbox formControlName="isSeal" (change)="onFlagChange('isSeal', $event.checked)">Sello</mat-checkbox>
+  <mat-checkbox formControlName="isToken" (change)="onFlagChange('isToken', $event.checked)">Token</mat-checkbox>
+  <mat-checkbox formControlName="isQuickSpell" (change)="onFlagChange('isQuickSpell', $event.checked)">Hechizo rápido</mat-checkbox>
+  <mat-checkbox formControlName="isSlowSpell" (change)="onFlagChange('isSlowSpell', $event.checked)">Hechizo lento</mat-checkbox>
+  <mat-checkbox formControlName="isArtifact" (change)="onFlagChange('isArtifact', $event.checked)">Artefacto</mat-checkbox>
+</div>
+
+
+      <h3>Tags</h3>
+      <div formGroupName="tags" class="tags">
+        <mat-checkbox *ngFor="let tag of tagsList" [formControlName]="tag">
+          {{ tag }}
+        </mat-checkbox>
+      </div>
+
+      <div class="button-container">
+        <button mat-raised-button color="primary" type="submit" [disabled]="cardForm.invalid">
+          Guardar carta
+        </button>
+      </div>
+
+    </form>
+  </mat-card>
+
+  <!-- Columna derecha: lista de cartas -->
+<div class="side-panel">
+  <div class="download-container">
+    <button mat-raised-button color="accent" (click)="downloadCards()">
+      Descargar cartas
+    </button>
+  </div>
+
+  <h3>Cartas cargadas</h3>
+  <div *ngFor="let card of cards; let i = index">
+    <mat-card class="card-item">
+      <mat-card-title class="color">{{ card.name }}</mat-card-title>
+      <mat-card-subtitle class="color">{{ card.faction }} - {{ card.rarity }}</mat-card-subtitle>
+      <img *ngIf="card.img" [src]="card.img" alt="{{ card.name }}" class="card-img">
+
+      <div class="card-buttons">
+        <button mat-icon-button color="primary" (click)="editCard(i)">
+          <mat-icon class="edit">edit</mat-icon>
+        </button>
+        <button mat-icon-button color="warn" (click)="deleteCard(i)">
+          <mat-icon class="delete">delete</mat-icon>
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
+
+</div>
