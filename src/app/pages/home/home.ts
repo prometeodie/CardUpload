@@ -45,6 +45,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Ataque rápido',
   'Atrapo',
   'Aturdir',
+  'Busco',
   'Cargar',
   'Caída libre',
   'Comerciable',
