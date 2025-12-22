@@ -199,18 +199,4 @@ downloadCards() {
 }
 
 
-onFlagChange(selectedFlag: string, checked: boolean) {
-  if (checked) {
-    // Si activaste uno, desactivar todos los demás
-    const flags = ['banned', 'isSeal', 'isToken', 'isQuickSpell', 'isSlowSpell', 'isArtifact'];
-    flags.forEach(flag => {
-      if (flag !== selectedFlag) {
-        this.cardForm.get(flag)?.setValue(false, { emitEvent: false });
-      }
-    });
-  }
-  // Si desactivaste, no hace falta nada (queda ninguno seleccionado)
-}
-
-
 }
