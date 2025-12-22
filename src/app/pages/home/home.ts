@@ -60,6 +60,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Drenar',
   'Empujo',
   'Enfermedad',
+  'Entro',
   'Equipado',
   'Escudo mágico',
   'estructura',
