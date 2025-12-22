@@ -57,6 +57,8 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Enfermedad',
   'Escudo mágico',
   'estructura',
+  'Finalizar',
+  'Gano',
   'Inicio del turno',
   'invocar',
   'inflinjo',
