@@ -54,6 +54,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Creo',
   'curar',
   'Daño',
+  'Destruyo',
   'Drenar',
   'Enfermedad',
   'Equipado',
