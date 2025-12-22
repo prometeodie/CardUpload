@@ -13,4 +13,5 @@ export interface Card {
   isQuickSpell?: boolean;
   isSlowSpell?: boolean;
   isArtifact?: boolean;
+  isEstructure?: boolean;
 }
