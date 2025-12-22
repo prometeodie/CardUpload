@@ -34,7 +34,7 @@ export class Home {
 
 factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   rarities = ['common','rare','epic','legendary','unlimited'];
-  tagsList = [ 'Adivinar','Amanecer','Al atacar','Al golpear','Aniquilar','Asalto','Ataque 360','Ataque rápido','Atrapo','Aturdir','Cargar','Caída libre','Comerciable','Creo','Drenar','Enfermedad','Escudo mágico','estructura','Inicio del turno', 'invocas','Ofrenda tenebrosa', 'otorgo','Primera vez','Provocar','Puñalada','Regeneración','Silencio','Sobrecarga','Toque mortal','Último suspiro','Venganza','Vínculo' ];
+  tagsList = [ 'Adivinar','Amanecer','Al atacar','Al golpear','Aniquilar','Asalto','Ataque 360','Ataque rápido','Atrapo','Aturdir','Cargar','Caída libre','Comerciable','Creo','Drenar','Enfermedad','Escudo mágico','estructura','Inicio del turno', 'invocar','Ofrenda tenebrosa', 'otorgo','Primera vez','Provocar','Puñalada','Regeneración','Silencio','Sobrecarga','Toque mortal','Último suspiro','Venganza','Vínculo' ];
 
   cardForm: FormGroup;
   cards: Card[] = [];
