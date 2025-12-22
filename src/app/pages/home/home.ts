@@ -37,6 +37,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   tagsList = [
   'Adivinar',
   'Amanecer',
+  'Anulo',
   'Al atacar',
   'Al golpear',
   'Aniquilar',
