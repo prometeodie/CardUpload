@@ -115,31 +115,51 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
       tags: this.fb.group(tagsGroup)
     });
   }
-
   ngOnInit() {
     const saved = localStorage.getItem('cards');
     this.cards = saved ? JSON.parse(saved) : [];
   }
 
   saveCard() {
-    const formValue = this.cardForm.value;
-    const selectedTags = this.tagsList.filter(tag => formValue.tags[tag]);
-    const card: Card = {
-      id: this.editingIndex !== null ? this.cards[this.editingIndex].id : Date.now().toString(),
-      ...formValue,
-      tags: selectedTags
-    };
+  const formValue = this.cardForm.value;
+  const selectedTags = this.tagsList.filter(tag => formValue.tags[tag]);
 
-    if(this.editingIndex !== null){
-      this.cards[this.editingIndex] = card;
-      this.editingIndex = null;
-    } else {
-      this.cards.push(card);
-    }
+  const rawCard: Card = {
+    id: this.editingIndex !== null
+      ? this.cards[this.editingIndex].id
+      : Date.now().toString(),
+    ...formValue,
+    tags: selectedTags
+  };
 
-    localStorage.setItem('cards', JSON.stringify(this.cards));
-    this.cardForm.reset();
+  const card = this.normalizeCard(rawCard);
+
+  if (this.editingIndex !== null) {
+    this.cards[this.editingIndex] = card;
+    this.editingIndex = null;
+  } else {
+    this.cards.push(card);
   }
+
+  localStorage.setItem('cards', JSON.stringify(this.cards));
+  this.cardForm.reset();
+}
+
+
+ private normalizeCard<T extends Record<string, any>>(card: T): T {
+  return Object.fromEntries(
+    Object.entries(card).map(([key, value]) => {
+      if (value === null) {
+        if (key === 'cost') {
+          return [key, 0];
+        }
+        return [key, false];
+      }
+      return [key, value];
+    })
+  ) as T;
+}
+
 
   editCard(index: number) {
     const card = this.cards[index];
@@ -205,6 +225,4 @@ downloadCards() {
    localStorage.removeItem('cards');
   }
 }
-
-
 }
