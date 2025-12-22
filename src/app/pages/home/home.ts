@@ -49,6 +49,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Cargar',
   'Caída libre',
   'Comerciable',
+  'Contratacar',
   'Creo',
   'curar',
   'Daño',
