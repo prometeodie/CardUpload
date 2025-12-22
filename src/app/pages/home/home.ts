@@ -68,6 +68,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Regeneración',
   'Reducir',
   'Revelar',
+  'Revivo',
   'Silencio',
   'Sobrecarga',
   'Toque mortal',
