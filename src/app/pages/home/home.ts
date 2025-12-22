@@ -36,6 +36,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   rarities = ['common','rare','epic','legendary','unlimited'];
   tagsList = [
   'Adivinar',
+  'Activar magia',
   'Amanecer',
   'Anulo',
   'Al atacar',
@@ -70,6 +71,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'mejora',
   'Mover',
   'no puedo',
+  'no puede',
   'objetivo',
   'Ofrenda tenebrosa',
   'otorgo',
