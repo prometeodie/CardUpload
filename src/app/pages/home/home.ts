@@ -56,6 +56,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'estructura',
   'Inicio del turno',
   'invocar',
+  'inflinjo',
   'mejora',
   'no puedo',
   'objetivo',
