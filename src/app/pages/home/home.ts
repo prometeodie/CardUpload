@@ -69,6 +69,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Reducir',
   'Revelar',
   'Revivo',
+  'Robar',
   'Sacrificar',
   'Silencio',
   'Sobrecarga',
