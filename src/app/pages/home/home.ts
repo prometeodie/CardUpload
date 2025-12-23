@@ -67,6 +67,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Devuelvo',
   'Drenar',
   'Diagonal',
+  'Eclosiono',
   'Empujo',
   'Enfermedad',
   'Enemiga',
