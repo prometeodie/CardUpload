@@ -41,6 +41,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Anulo',
   'Al atacar',
   'Al golpear',
+  'aliada',
   'Aniquilar',
   'Asalto',
   'Atacar 2 veces',
