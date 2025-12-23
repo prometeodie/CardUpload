@@ -86,6 +86,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'invocar',
   'inflinjo',
   'Inmune',
+  'Lanzo',
   'Mano',
   'Mazo',
   'mejora',
