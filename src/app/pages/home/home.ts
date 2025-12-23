@@ -113,7 +113,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Silencio',
   'Sobrecarga',
   'Toque mortal',
-  'Token';
+  'Token',
   'Último suspiro',
   'Venganza',
   'Vida',
