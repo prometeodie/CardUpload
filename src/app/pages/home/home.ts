@@ -75,6 +75,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'inflinjo',
   'Inmune',
   'mejora',
+  'Mezclo',
   'morir',
   'Mover',
   'no puedo',
