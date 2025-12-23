@@ -51,6 +51,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Aturdir',
   'Busco',
   'Cargar',
+  'Carta',
   'Caída libre',
   'Cementerio',
   'Comerciable',
@@ -85,6 +86,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'objetivo',
   'Ofrenda tenebrosa',
   'otorgo',
+  'Pagar',
   'Primera vez',
   'Provocar',
   'Puñalada',
@@ -102,6 +104,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Toque mortal',
   'Último suspiro',
   'Venganza',
+  'Vida',
   'Vínculo'
 ];
 
