@@ -85,6 +85,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'no puede',
   'objetivo',
   'Ofrenda tenebrosa',
+  'Oponente',
   'otorgo',
   'Pagar',
   'Primera vez',
