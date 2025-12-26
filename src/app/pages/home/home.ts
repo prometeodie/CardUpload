@@ -115,6 +115,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Pagar',
   'Primera vez',
   'Posicion',
+  'Pierdo',
   'Provocar',
   'Puñalada',
   'Regeneración',
