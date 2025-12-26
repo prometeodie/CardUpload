@@ -93,6 +93,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'inflinjo',
   'Intercambio',
   'Inmune',
+  'Jugar',
   'Lanzo',
   'Mano',
   'Magia',
