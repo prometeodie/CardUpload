@@ -126,6 +126,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Selecciona',
   'Silencio',
   'Sobrecarga',
+  'Teletransporto',
   'Todas',
   'Toque mortal',
   'Token',
