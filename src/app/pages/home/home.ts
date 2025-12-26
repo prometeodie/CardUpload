@@ -119,6 +119,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Sobrecarga',
   'Toque mortal',
   'Token',
+  'Transformar',
   'Último suspiro',
   'Venganza',
   'Vida',
@@ -216,7 +217,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
     isQuickSpell: card.isQuickSpell,
     isSlowSpell: card.isSlowSpell,
     isArtifact: card.isArtifact,
-    isEstructure: card.isEstructure, // ✅ FIX
+    isEstructure: card.isEstructure,
   });
 
 
