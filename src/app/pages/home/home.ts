@@ -66,6 +66,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Daño',
   'Dejo',
   'Destruyo',
+  'Descarto',
   'Devuelvo',
   'Drenar',
   'Diagonal',
