@@ -148,6 +148,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
       isQuickSpell: [false],
       isSlowSpell: [false],
       isArtifact: [false],
+      isEstructure: [false],
       tags: this.fb.group(tagsGroup)
     });
   }
