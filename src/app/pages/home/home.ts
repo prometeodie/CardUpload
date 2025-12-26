@@ -204,19 +204,21 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
 
     // Setear valores en el formulario
     this.cardForm.patchValue({
-      name: card.name,
-      faction: card.faction,
-      rarity: card.rarity,
-      img: card.img,
-      factionCost: card.factionCost,
-      cost: card.cost,
-      banned: card.banned,
-      isSeal: card.isSeal,
-      isToken: card.isToken,
-      isQuickSpell: card.isQuickSpell,
-      isSlowSpell: card.isSlowSpell,
-      isArtifact: card.isArtifact,
-    });
+    name: card.name,
+    faction: card.faction,
+    rarity: card.rarity,
+    img: card.img,
+    factionCost: card.factionCost,
+    cost: card.cost,
+    banned: card.banned,
+    isSeal: card.isSeal,
+    isToken: card.isToken,
+    isQuickSpell: card.isQuickSpell,
+    isSlowSpell: card.isSlowSpell,
+    isArtifact: card.isArtifact,
+    isEstructure: card.isEstructure, // ✅ FIX
+  });
+
 
     // Setear tags
     const tagsGroup = this.cardForm.get('tags') as FormGroup;
