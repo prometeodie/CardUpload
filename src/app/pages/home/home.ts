@@ -91,6 +91,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Inicio del turno',
   'invocar',
   'inflinjo',
+  'Intercambio',
   'Inmune',
   'Lanzo',
   'Mano',
