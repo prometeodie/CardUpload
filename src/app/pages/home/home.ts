@@ -36,6 +36,8 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   rarities = ['common','rare','epic','legendary','unlimited'];
   tagsList = [
   'Adivinar',
+  'Adelante',
+  'Atras',
   'Activar magia',
   'Amanecer',
   'Anulo',
