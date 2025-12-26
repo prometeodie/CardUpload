@@ -67,6 +67,8 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Criatura',
   'curar',
   'Coste',
+  'Cofre Codicia',
+  'Cofre pesado',
   'Daño',
   'Dejo',
   'Destruyo',
