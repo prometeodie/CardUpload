@@ -59,6 +59,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Cargar',
   'Carta',
   'Cambio',
+  'Cerco electrico',
   'Cementerio',
   'Comerciable',
   'Contraatacar',
