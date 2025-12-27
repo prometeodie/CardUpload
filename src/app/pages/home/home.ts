@@ -139,6 +139,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Token',
   'Transformar',
   'Último suspiro',
+  'Una vez por turno',
   'Venganza',
   'Vida',
   'Vínculo'
