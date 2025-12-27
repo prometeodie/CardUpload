@@ -56,6 +56,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Busco',
   'Caída libre',
   'Campo',
+  'Casillero',
   'Cargar',
   'Carta',
   'Cambio',
