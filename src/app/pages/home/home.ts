@@ -131,6 +131,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Silencio',
   'Sobrecarga',
   'Teletransporto',
+  'Terreno',
   'Todas',
   'Toque mortal',
   'Token',
@@ -151,22 +152,24 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
     const tagsGroup: any = {};
     this.tagsList.forEach(tag => tagsGroup[tag] = new FormControl(false));
 
-    this.cardForm = this.fb.group({
-      name: [''],
-      faction: [''],
-      rarity: [''],
-      img: [''],
-      factionCost: [0],
-      cost: [0],
-      banned: [false],
-      isSeal: [false],
-      isToken: [false],
-      isQuickSpell: [false],
-      isSlowSpell: [false],
-      isArtifact: [false],
-      isEstructure: [false],
-      tags: this.fb.group(tagsGroup)
-    });
+this.cardForm = this.fb.group({
+  name: [''],
+  faction: [''],
+  rarity: [''],
+  img: [''],
+  factionCost: [0],
+  cost: [0],
+  banned: [false],
+  isSeal: [false],
+  isToken: [false],
+  isQuickSpell: [false],
+  isSlowSpell: [false],
+  isArtifact: [false],
+  isEstructure: [false],
+  isTerreno: [false], // ✅ NUEVO
+  tags: this.fb.group(tagsGroup)
+});
+
   }
   ngOnInit() {
     const saved = localStorage.getItem('cards');
@@ -219,21 +222,23 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
     this.editingIndex = index;
 
     // Setear valores en el formulario
-    this.cardForm.patchValue({
-    name: card.name,
-    faction: card.faction,
-    rarity: card.rarity,
-    img: card.img,
-    factionCost: card.factionCost,
-    cost: card.cost,
-    banned: card.banned,
-    isSeal: card.isSeal,
-    isToken: card.isToken,
-    isQuickSpell: card.isQuickSpell,
-    isSlowSpell: card.isSlowSpell,
-    isArtifact: card.isArtifact,
-    isEstructure: card.isEstructure,
-  });
+   this.cardForm.patchValue({
+  name: card.name,
+  faction: card.faction,
+  rarity: card.rarity,
+  img: card.img,
+  factionCost: card.factionCost,
+  cost: card.cost,
+  banned: card.banned,
+  isSeal: card.isSeal,
+  isToken: card.isToken,
+  isQuickSpell: card.isQuickSpell,
+  isSlowSpell: card.isSlowSpell,
+  isArtifact: card.isArtifact,
+  isEstructure: card.isEstructure,
+  isTerreno: card.isTerreno, // ✅ NUEVO
+});
+
 
 
     // Setear tags
