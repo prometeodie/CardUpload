@@ -112,6 +112,7 @@ factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
   'Ofrenda tenebrosa',
   'Oponente',
   'otorgo',
+  'Ordenar',
   'Pagar',
   'Primera vez',
   'Posicion',
