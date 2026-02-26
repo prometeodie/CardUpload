@@ -32,7 +32,7 @@ import { MatIcon } from '@angular/material/icon';
 })
 export class Home {
 
-factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter'];
+factions = ['marte', 'tierra', 'pluton', 'saturno', 'neptuno', 'jupiter','mercurio'];
   rarities = ['common','rare','epic','legendary','unlimited'];
   tagsList = [
   'Adivinar',
